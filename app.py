@@ -38,7 +38,7 @@ if submit_button and user_command:
             # Lệnh để chạy gemini-cli
             # Chúng ta truyền lệnh của người dùng như một đối số duy nhất
             # check=False để ngăn script dừng lại nếu có lỗi, chúng ta sẽ tự xử lý lỗi
-            command = ['gemini', user_command]
+            command = ['npx', '@google/gemini-cli', user_command]
 
             result = subprocess.run(
                 command,
