@@ -1,0 +1,40 @@
+# Tệp này chỉ định những tệp và thư mục mà Git nên bỏ qua.
+
+# --- BẢO MẬT ---
+# Bỏ qua file chứa secret của Streamlit. Đây là quy tắc quan trọng nhất!
+.streamlit/secrets.toml
+
+# --- PYTHON ---
+# Bỏ qua thư mục môi trường ảo
+venv/
+*.venv/
+env/
+
+# Bỏ qua bộ đệm của Python và các file đã biên dịch
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Bỏ qua các thư mục phân phối
+build/
+dist/
+*.egg-info/
+
+# --- NODE.JS ---
+# Bỏ qua thư mục chứa các package Node.js (nếu có)
+node_modules/
+
+# Bỏ qua các file log
+npm-debug.log*
+yarn-error.log
+yarn-debug.log
+
+# --- HỆ ĐIỀU HÀNH & TRÌNH SOẠN THẢO CODE ---
+# Bỏ qua các file hệ thống của macOS và Windows
+.DS_Store
+Thumbs.db
+
+# Bỏ qua các file cấu hình của trình soạn thảo code (ví dụ: VS Code)
+.vscode/
+.idea/
